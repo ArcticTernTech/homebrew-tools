@@ -1,13 +1,12 @@
 class HarrisCli < Formula
   desc "跨境电商运营 CLI — 多平台、多账号统一管理"
   homepage "https://github.com/ArcticTernTech/harris-cli"
-  version "0.0.0"
+  version "v0.3.0"
 
-  # 此文件由 GitHub Actions 自动更新，请勿手动修改
   on_macos do
     on_arm do
-      url "https://github.com/ArcticTernTech/harris-cli/releases/download/v0.0.0/harris-darwin-arm64.tar.gz"
-      sha256 "placeholder"
+      url "https://github.com/ArcticTernTech/harris-cli/releases/download/v0.3.0/harris-darwin-arm64.tar.gz"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
@@ -16,6 +15,6 @@ class HarrisCli < Formula
   end
 
   test do
-    system "#{bin}/harris", "--version"
+    system "\#{bin}/harris", "--version"
   end
 end
